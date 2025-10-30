@@ -101,7 +101,7 @@ fun FormDataDiri(modifier: Modifier
             alamat=textAlamat
         }
     ){
-        Text(StringResource("Submit"))
+        Text(stringResource(R.string.submit))
     }
 
     Divider(
