@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -34,13 +35,14 @@ fun FormDataDiri(modifier: Modifier
         OutlinedTextField(
             value = textNama,
             singleLine = true,
-            Shape = MaterialTheme.Shapes.large,
+            Shape = MaterialTheme.shapes.large,
             modifier = Modifier.width(250.dp),
-            label = {Text(text = "Nama Lengkap")},
+            label = { Text(text = "Nama Lengkap")},
             onValueChange = {
                 textNama = it
             }
         )
+
     }
 }
 
